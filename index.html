@@ -1,0 +1,135 @@
+<!DOCTYPE html> <html><head>
+        <title>Unit 5 project Gabriela Ortiz </title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: 'Oswald', sans-serif;
+    background-color: lightpink;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+.name-button {
+    height: 30px;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color:gray;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: center;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}</style></head>
+    <body>
+        <div class="title">
+            <h1>What Disney Princess are you?</h1>
+        </div>
+       
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnft-x0MRPUiHRoudhxxgmcJH9zyFNOgFgBw&amp;usqp=CAU">
+         <div class="questions">
+           <label>Do you want to live in a castle?</label>
+            <div>
+                
+                 <input class="name-input" placeholder="castle or no castle">
+                
+            </div>
+             <div>
+            <h3>Do you like animals?</h3>
+             </div>
+               <input class="oclass" placeholder="animal or no animal">
+               
+             <div>
+                
+                                       
+            </div>
+            
+             <div>
+             <h3>Do you have siblings?</h3>
+             </div>
+             <div>
+                 
+                 
+  
+
+          
+
+ 
+               <input class="SClass" placeholder="sibling or no sibling">
+                <button class="button">Submit</button>
+             </div>
+        </div>
+     
+  
+        <div class="result">
+            this is where the user will see their quiz result! 
+        </div>
+         <button class="restart-button">Restart?</button>
+
+
+
+    
+<script>
+/*__POPCODESTART__*/
+var Name = document.querySelector(".Choose-button");
+var Age = document.querySelector(".animal-button");
+var correctquestion = document.querySelector("castle or no");
+var restart = document.querySelector(" .restart-button");
+var questions = document.querySelector(".questions");
+var button = document.querySelector("button");
+var Power = document.querySelector("questions");
+var result = document.querySelector(".result");
+
+button.onclick = function () {
+  var NameInput = document.querySelector(".name-input").value;
+  var oclass = document.querySelector(".oclass").value;
+  var SClass = document.querySelector(".SClass").value;
+
+  if (NameInput === correctquestion && oclass <= 15 && SClass === "sibling") {
+    alert("You're Ariel");
+  }
+}; // else if ( ( username === correctUsername) &&
+//    (password !== correctPassword)) {
+// alert("Wrong Password");
+// }
+// else if ( ( username !== correctUsername) &&
+//   (password === correctPassword)) {
+//alert("Wrong Username");
+//}
+//else if ( ( username !== correctUsername) ||
+//   (password !== correctPassword)) {
+//alert("Incorrect username and password");
+// }
+// else if ( ( username === " ") ||
+//     (password === " ")) {
+//alert("Incorrect username and password");
+//}
+
+
+{
+  result.style.display = "block";
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIk5hbWUiLCJkb2N1bWVudCIsInF1ZXJ5U2VsZWN0b3IiLCJBZ2UiLCJjb3JyZWN0cXVlc3Rpb24iLCJyZXN0YXJ0IiwicXVlc3Rpb25zIiwiYnV0dG9uIiwiUG93ZXIiLCJyZXN1bHQiLCJvbmNsaWNrIiwiTmFtZUlucHV0IiwidmFsdWUiLCJvY2xhc3MiLCJTQ2xhc3MiLCJhbGVydCIsInN0eWxlIiwiZGlzcGxheSJdLCJtYXBwaW5ncyI6IkFBQ0EsSUFBSUEsSUFBSSxHQUFHQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsZ0JBQXZCLENBQVg7QUFDQSxJQUFJQyxHQUFHLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixnQkFBdkIsQ0FBVjtBQUNBLElBQUlFLGVBQWUsR0FBR0gsUUFBUSxDQUFDQyxhQUFULENBQXVCLGNBQXZCLENBQXRCO0FBQ0EsSUFBSUcsT0FBTyxHQUFHSixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsa0JBQXZCLENBQWQ7QUFDQSxJQUFJSSxTQUFTLEdBQUdMLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixDQUFoQjtBQUNBLElBQUlLLE1BQU0sR0FBR04sUUFBUSxDQUFDQyxhQUFULENBQXVCLFFBQXZCLENBQWI7QUFDQSxJQUFJTSxLQUFLLEdBQUdQLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixXQUF2QixDQUFaO0FBQ0EsSUFBSU8sTUFBTSxHQUNOUixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsQ0FESjs7QUFHQUssTUFBTSxDQUFDRyxPQUFQLEdBQWdCLFlBQVU7QUFDeEIsTUFBSUMsU0FBUyxHQUFHVixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsYUFBdkIsRUFBc0NVLEtBQXREO0FBQ0UsTUFBSUMsTUFBTSxHQUFHWixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsRUFBa0NVLEtBQS9DO0FBQ0EsTUFBSUUsTUFBTSxHQUFHYixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsRUFBa0NVLEtBQS9DOztBQUVILE1BQUtELFNBQVMsS0FBS1AsZUFBZixJQUNFUyxNQUFNLElBQUksRUFBVixJQUFnQkMsTUFBTSxLQUFLLFNBRGpDLEVBQzZDO0FBQ3hDQyxJQUFBQSxLQUFLLENBQUMsY0FBRCxDQUFMO0FBQXVCO0FBQzNCLENBUkYsQyxDQVVJO0FBQ0M7QUFDRjtBQUNBO0FBQ0E7QUFDRztBQUNGO0FBQ0E7QUFDQTtBQUNFO0FBQ0Y7QUFDRDtBQUNEO0FBQ0U7QUFDQTtBQUNBOzs7QUFHSjtBQUNRTixFQUFBQSxNQUFNLENBQUNPLEtBQVAsQ0FBYUMsT0FBYixHQUF1QixPQUF2QjtBQUNIIiwic291cmNlc0NvbnRlbnQiOlsiXG5sZXQgTmFtZSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuQ2hvb3NlLWJ1dHRvblwiKTtcbmxldCBBZ2UgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmFuaW1hbC1idXR0b25cIik7XG5sZXQgY29ycmVjdHF1ZXN0aW9uID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcImNhc3RsZSBvciBub1wiKTtcbmxldCByZXN0YXJ0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIiAucmVzdGFydC1idXR0b25cIik7XG5sZXQgcXVlc3Rpb25zID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5xdWVzdGlvbnNcIik7XG5sZXQgYnV0dG9uID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcImJ1dHRvblwiKTtcbmxldCBQb3dlciA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCJxdWVzdGlvbnNcIik7XG5sZXQgcmVzdWx0ID0gXG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHRcIik7XG5cbmJ1dHRvbi5vbmNsaWNrPSBmdW5jdGlvbigpe1xuICBsZXQgTmFtZUlucHV0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5uYW1lLWlucHV0XCIpLnZhbHVlO1xuICAgIGxldCBvY2xhc3MgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLm9jbGFzc1wiKS52YWx1ZTtcbiAgICBsZXQgU0NsYXNzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5TQ2xhc3NcIikudmFsdWU7XG4gICAgXG4gaWYoIChOYW1lSW5wdXQgPT09IGNvcnJlY3RxdWVzdGlvbikmJlxuICAgICAgKG9jbGFzcyA8PSAxNSAmJiBTQ2xhc3MgPT09IFwic2libGluZ1wiICkpe1xuICAgICAgYWxlcnQoXCJZb3UncmUgQXJpZWxcIik7fVxuIH07XG5cbiAgICAvLyBlbHNlIGlmICggKCB1c2VybmFtZSA9PT0gY29ycmVjdFVzZXJuYW1lKSAmJlxuICAgICAvLyAgICAocGFzc3dvcmQgIT09IGNvcnJlY3RQYXNzd29yZCkpIHtcbiAgIC8vIGFsZXJ0KFwiV3JvbmcgUGFzc3dvcmRcIik7XG4gICAvLyB9XG4gICAvLyBlbHNlIGlmICggKCB1c2VybmFtZSAhPT0gY29ycmVjdFVzZXJuYW1lKSAmJlxuICAgICAgLy8gICAocGFzc3dvcmQgPT09IGNvcnJlY3RQYXNzd29yZCkpIHtcbiAgICAvL2FsZXJ0KFwiV3JvbmcgVXNlcm5hbWVcIik7XG4gICAgLy99XG4gICAgLy9lbHNlIGlmICggKCB1c2VybmFtZSAhPT0gY29ycmVjdFVzZXJuYW1lKSB8fFxuICAgICAgLy8gICAocGFzc3dvcmQgIT09IGNvcnJlY3RQYXNzd29yZCkpIHtcbiAgICAvL2FsZXJ0KFwiSW5jb3JyZWN0IHVzZXJuYW1lIGFuZCBwYXNzd29yZFwiKTtcbiAgIC8vIH1cbiAgLy8gZWxzZSBpZiAoICggdXNlcm5hbWUgPT09IFwiIFwiKSB8fFxuICAgIC8vICAgICAocGFzc3dvcmQgPT09IFwiIFwiKSkge1xuICAgIC8vYWxlcnQoXCJJbmNvcnJlY3QgdXNlcm5hbWUgYW5kIHBhc3N3b3JkXCIpO1xuICAgIC8vfVxuXG5cbnsgIFxuICAgICAgICByZXN1bHQuc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbiAgICB9XG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG4iXX0=</script></body></html>
